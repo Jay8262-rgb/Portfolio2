@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jay Keshri | Full Stack &amp; AI Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f7;--surface:#fff;--ink:#14213d;--muted:#51607a;--line:#cfd8e6;--accent:#2f5bff;--on-accent:#fff;--soft:#e1e9ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a2e;--surface:#17253f;--ink:#eaf0fb;--muted:#9fb0cc;--line:#2a3b5c;--accent:#7b9bff;--on-accent:#0f1a2e;--soft:#1f3260}}
+:root[data-theme="dark"]{--bg:#0f1a2e;--surface:#17253f;--ink:#eaf0fb;--muted:#9fb0cc;--line:#2a3b5c;--accent:#7b9bff;--on-accent:#0f1a2e;--soft:#1f3260}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+nav{display:flex;gap:18px;justify-content:flex-end;flex-wrap:wrap;padding:20px 0;font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:44px 0 52px}
+.hero h1{font-size:clamp(3.2rem,15vw,7.5rem);line-height:.9;margin:0 0 22px;font-weight:800;letter-spacing:-.035em}
+.role{font-size:1.25rem;font-weight:600;color:var(--accent);margin:0 0 14px}
+.hero p.lead{max-width:36em;font-size:1.15rem;color:var(--muted);margin:0 0 28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;margin:0 8px 10px 0}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.stats{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin-top:34px}
+.stat{background:var(--soft);border-radius:14px;padding:16px 18px}
+.stat b{display:block;font-size:1.6rem;line-height:1.1}
+.stat span{font-size:.92rem;color:var(--muted)}
+section{padding:40px 0;border-top:2px solid var(--line)}
+h2{font-size:1.8rem;margin:0 0 22px;letter-spacing:-.015em}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:18px}
+.proj h3{margin:0 0 4px;font-size:1.3rem}
+.proj .stack{color:var(--accent);font-weight:600;font-size:.95rem;margin:0 0 12px}
+.proj ul{margin:0;padding-left:1.2em;color:var(--muted)}
+.proj li{margin-bottom:8px}
+.skills{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.skills h3{margin:0 0 10px;font-size:1.05rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tags li{padding:5px 13px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:.92rem}
+.edu{border-left:4px solid var(--accent);padding:2px 0 2px 18px;margin-bottom:22px}
+.edu h3{margin:0;font-size:1.15rem}
+.edu p{margin:2px 0;color:var(--muted)}
+.badge{display:inline-block;background:var(--accent);color:var(--on-accent);padding:3px 12px;border-radius:999px;font-weight:600;font-size:.85rem;margin-left:8px;vertical-align:middle}
+.contact a{display:inline-block;margin:0 18px 8px 0;font-weight:600;color:var(--accent)}
+footer{padding:30px 0 50px;color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<h1>Jay Keshri</h1>
+<p class="role">Full stack developer building AI-powered apps</p>
+<p class="lead">B.Tech Computer Science graduate from Hazaribagh, India. I build web apps with React, Node.js and FastAPI, and RAG systems that answer questions from your own documents.</p>
+<a class="btn" href="#projects">See my projects</a>
+<a class="btn ghost" href="https://github.com/Jay8262-rgb">GitHub</a>
+<a class="btn ghost" href="#contact">Contact me</a>
+<div class="stats">
+<div class="stat"><b>National finalist</b><span>Smart India Hackathon</span></div>
+<div class="stat"><b>&lt; 1.2 s</b><span>RAG query response</span></div>
+<div class="stat"><b>10+</b><span>REST API endpoints built</span></div>
+</div>
+</header>
+
+<section id="projects">
+<h2>Projects</h2>
+<article class="proj">
+<h3>RAG-based conversational AI chatbot</h3>
+<p class="stack">Python, React.js, LangChain, Ollama, FastAPI, DeepSeek-R1, BGE-M3</p>
+<ul>
+<li>End-to-end Retrieval-Augmented Generation system that answers from your own documents in under 1.2 seconds.</li>
+<li>Automated chunking pipeline for PDF, DOCX, TXT, CSV, HTML and Markdown files.</li>
+<li>Precise retrieval with BGE-M3 embeddings and cosine similarity.</li>
+<li>Runs DeepSeek-R1 locally through Ollama and FastAPI, so your documents never leave your machine.</li>
+</ul>
+</article>
+<article class="proj">
+<h3>Full-stack food ordering app</h3>
+<p class="stack">React.js, Node.js, Express.js, MongoDB, React Router, Axios</p>
+<ul>
+<li>Responsive ordering app with menu browsing, a live cart and user login.</li>
+<li>10+ Express.js REST endpoints for menus, dietary filters, cart sync and orders.</li>
+<li>MongoDB storage for inventory, user profiles and order history.</li>
+<li>React Hooks and modular components keep rendering fast on phones and desktops.</li>
+</ul>
+</article>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Languages</h3><ul class="tags"><li>Python</li><li>Java</li><li>JavaScript</li><li>SQL</li><li>HTML5</li><li>CSS3</li></ul></div>
+<div><h3>Frontend</h3><ul class="tags"><li>React.js</li><li>Next.js</li><li>React Router</li><li>Tailwind CSS</li><li>Responsive design</li></ul></div>
+<div><h3>Backend</h3><ul class="tags"><li>Node.js</li><li>Express.js</li><li>FastAPI</li><li>REST APIs</li><li>Microservices</li></ul></div>
+<div><h3>Databases</h3><ul class="tags"><li>MongoDB</li><li>PostgreSQL</li><li>SQL</li><li>Schema design</li></ul></div>
+<div><h3>AI and ML</h3><ul class="tags"><li>Generative AI</li><li>LLMs</li><li>RAG</li><li>LangChain</li><li>DeepSeek-R1</li><li>Scikit-Learn</li><li>Pandas</li><li>NumPy</li></ul></div>
+<div><h3>Tools</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>Linux</li><li>Postman</li><li>Vite</li><li>Ollama</li></ul></div>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="edu"><h3>B.Tech, Computer Science &amp; Engineering</h3><p>Sarala Birla University, Ranchi · 2022 to 2026</p><p>CGPA 6.85 / 10. Coursework: Data Structures and Algorithms, DBMS, OOP, Operating Systems, Web Technologies.</p></div>
+<div class="edu"><h3>Higher Secondary, Science stream</h3><p>Plus 2 High School, Barhi · 2020 to 2022</p><p>67.20%</p></div>
+</section>
+
+<section id="achievements">
+<h2>Achievements</h2>
+<div class="proj"><h3>Smart India Hackathon <span class="badge">National Finalist</span></h3><p style="margin:6px 0 0;color:var(--muted)">Selected among top engineering teams nationwide to build and present software solutions for real-world problems.</p></div>
+<div class="proj"><h3>Python Programming Certification</h3><p style="margin:6px 0 0;color:var(--muted)">CodeWithHarry. Core and advanced Python, OOP, data structures.</p></div>
+<div class="proj"><h3>Data Science with Python</h3><p style="margin:6px 0 0;color:var(--muted)">CodeWithHarry. Exploratory data analysis, Pandas, NumPy, visualization.</p></div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let’s work together</h2>
+<p style="color:var(--muted);max-width:34em">I’m open to software developer and full stack roles. The quickest way to reach me is email.</p>
+<a href="mailto:jay.keshri.dsai@gmail.com">jay.keshri.dsai@gmail.com</a>
+<a href="https://linkedin.com/in/jay-keshri">LinkedIn</a>
+<a href="https://github.com/Jay8262-rgb">GitHub</a>
+</section>
+
+<footer>© 2026 Jay Keshri · Hazaribagh, Jharkhand, India</footer>
+</div>
+</body>
+</html>
